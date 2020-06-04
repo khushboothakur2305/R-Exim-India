@@ -1,0 +1,138 @@
+<div fxLayout style="padding: 70px;" fxLayoutGap="20px" fxHide.lt-md>
+    <section>
+      <div fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+        <section>
+          <h1 class="heading">Sugandha Rice</h1>
+        </section>
+        <section>
+          <img src="assets\Image\Grains\Rice\sugandha.jpg" style="width: 90%;" />
+        </section>
+        <section>
+          <div fxLayout fxLayoutGap="20px">
+            <section>
+               <b> Sugandha Rice </b>>offered is one of the finest quality
+               basmati rice available in India. Sugandha rice produces exotic aroma while
+               cooking and has mouth-watering taste.<br>
+                The nutritional value of Sugandha rice is very high,
+                 thus, its demand in households and restaurants is always at its peak.
+                  It is available in White Rice and Parboiled (Sella) rice in various
+                  packing sizes as per customer requirement.<br>
+
+
+                <b>Salient Features : </b>><br>
+                •	Pure line selection from basmati rice<br>
+                •	Grown in irrigated medium to low lands<br>
+                •	Delectable aroma and taste<br>
+
+
+
+            </section>
+            <section>
+              <div fxLayoutAlign="center">
+                <h2>Specification</h2>
+              </div>
+              <table mat-table [dataSource]="dataSource">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                  <th mat-header-cell *matHeaderCellDef> Weight </th>
+                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+
+              <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+            </section>
+          </div>
+        </section>
+        <section>
+
+          <button mat-raised-button color="primary">Enquire Now</button>
+        </section>
+      </div>
+    </section>
+    <section>
+      <app-grain-list></app-grain-list>
+    </section>
+  </div>
+  <div fxFlex fxHide.gt-md fxLayoutAlign="center">
+    <mat-card>
+      <mat-card-title class="cardheading" fxLayoutAlign="center">
+        Sugandha Rice</mat-card-title
+      >
+      <img
+        mat-card-image
+        src="assets\Image\Grains\Rice\sugandha.jpg"
+        class="mobimg"
+      />
+      <mat-card-content>
+        <section>
+          <b> Sugandha Rice </b>offered is one of the finest quality
+          basmati rice available in India. Sugandha rice produces exotic aroma while
+          cooking and has mouth-watering taste.<br>
+           The nutritional value of Sugandha rice is very high,
+            thus, its demand in households and restaurants is always at its peak.
+             It is available in White Rice and Parboiled (Sella) rice in various
+             packing sizes as per customer requirement.<br>
+
+
+           <b>Salient Features : </b>><br>
+           •	Pure line selection from basmati rice<br>
+           •	Grown in irrigated medium to low lands<br>
+           •	Delectable aroma and taste<br>
+
+
+
+       </section>
+
+        <h2>Specifications</h2>
+
+        <table class="mobiletable" mat-table [dataSource]="dataSource">
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>No.</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.position }}
+            </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef>Weight</th>
+            <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <mat-paginator
+          [pageSize]="5"
+          [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons
+        ></mat-paginator>
+        <button mat-raised-button color="primary">Enquire Now</button>
+      </mat-card-content>
+    </mat-card>
+  </div>

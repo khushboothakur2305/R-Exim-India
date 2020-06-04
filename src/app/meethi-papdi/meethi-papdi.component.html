@@ -1,0 +1,126 @@
+<div fxLayout style="padding: 70px;" fxLayoutGap="20px" fxHide.lt-md>
+    <section>
+      <div fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+        <section>
+          <h1 class="heading">Methi-Papdi</h1>
+        </section>
+        <section>
+          <img src="assets/Image/Food-Products/Methi-Papdi.jpg" style="width: 90%;" />
+        </section>
+        <section>
+          <div fxLayout fxLayoutGap="20px">
+            <section>
+               <b> A blast of flavor and a attack of crunchiness....</b><br>
+                 Your taste buds are in for an exciting adventure with
+                  these<b> methi papdi</b>!A traditional Indian jar snack ,
+                   these crisp Methi Puris are made with a dough of
+                    whole wheat flour, spruced up with fenugreek leaves
+                    and spices .<br> The mild bitterness and strong aroma of
+                     methis are really enchanting, and sure to tantalize
+                      your tast buds . you can serve the methi puris with
+                      tea to make it a special evening!
+
+            </section>
+            <section>
+              <div fxLayoutAlign="center">
+                <h2>Nutrition Value</h2>
+              </div>
+              <table mat-table [dataSource]="dataSource">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                  <th mat-header-cell *matHeaderCellDef> Weight </th>
+                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+
+              <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+            </section>
+          </div>
+        </section>
+        <section>
+
+          <button mat-raised-button color="primary">Enquire Now</button>
+        </section>
+      </div>
+    </section>
+    <section>
+      <app-demo></app-demo>
+    </section>
+  </div>
+  <div fxFlex fxHide.gt-md fxLayoutAlign="center">
+    <mat-card>
+      <mat-card-title class="cardheading" fxLayoutAlign="center">
+        Methi-Papdi</mat-card-title
+      >
+      <img
+        mat-card-image
+        src="assets/Image/Food-Products/Methi-Papdi.jpg"
+        class="mobimg"
+      />
+      <mat-card-content>
+        <section>
+          <b> A blast of flavor and a attack of crunchiness....</b><br>
+            Your taste buds are in for an exciting adventure with
+             these<b> methi papdi</b>!A traditional Indian jar snack ,
+              these crisp Methi Puris are made with a dough of
+               whole wheat flour, spruced up with fenugreek leaves
+               and spices .<br> The mild bitterness and strong aroma of
+                methis are really enchanting, and sure to tantalize
+                 your tast buds . you can serve the methi puris with
+                 tea to make it a special evening!
+
+       </section>
+
+        <h2>Nutrition Value</h2>
+
+        <table class="mobiletable" mat-table [dataSource]="dataSource">
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>No.</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.position }}
+            </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef>Weight</th>
+            <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <mat-paginator
+          [pageSize]="5"
+          [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons
+        ></mat-paginator>
+        <button mat-raised-button color="primary">Enquire Now</button>
+      </mat-card-content>
+    </mat-card>
+  </div>

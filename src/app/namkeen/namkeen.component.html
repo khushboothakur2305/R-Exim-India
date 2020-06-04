@@ -1,0 +1,156 @@
+<div fxLayout style="padding: 70px;" fxLayoutGap="20px" fxHide.lt-md>
+  <section>
+    <div fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+      <section>
+        <h1 class="heading">Namkeen</h1>
+      </section>
+      <section>
+        <img src="assets/Image/Food-Products/Namkeen.png"
+        style="width: 70%;"
+        />
+      </section>
+      <section>
+        <div fxLayout fxLayoutGap="20px">
+          <section>
+            If you have been around someone from India, been to India,
+            or even just eaten Indian food,
+            you may have heard the word<b> "namkeen"</b>. <b>Namkeen</b>
+            is the Hindi word used to describe a savory flavor.
+            The word namkeen is derived from the word namak (meaning salt).
+            It is also used as a generic term to describe savory snack
+            foods. Namkeen is pronounced <b>"num-keen,"</b> and can also be
+            referred to as numkeen, namkin, and numkin depending on
+            where you travel throughout India and who you speak to.<br>
+            <b>Common Snack Foods</b><br>
+            Typical namkeen snacks in Indian cuisine include <b>khaara,
+              farsan, chivda, sav, chips, and bhujiya</b>. Namkeen of
+            Indore and ratlam are two snacks that are very well
+            known for their tastes. There are a few other Indian
+            snacks that incorporate salt and have a namkeen flavor,
+            some of which are made from basic grains and can be
+            flavored in a multitude of ways. These kinds are
+            therefore similar to each other but have different names.
+            Many of the namkeen snacks include sev, a versatile crunchy
+            snack that can be flavored with all sorts of spices.
+            Sev looks similar to the Chinese hard noodles served
+            in American Chinese food.
+
+
+          </section>
+          <section>
+            <div fxLayoutAlign="center">
+              <h2>Nutrition Value</h2>
+            </div>
+            <table mat-table [dataSource]="dataSource">
+              <!-- Position Column -->
+              <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef>No.</th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.position }}
+                </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef>Name</th>
+                <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+              </ng-container>
+
+              <!-- Weight Column -->
+              <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef>Weight</th>
+                <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+
+            <mat-paginator
+              [pageSize]="5"
+              [pageSizeOptions]="[5, 10, 20]"
+              showFirstLastButtons
+            ></mat-paginator>
+          </section>
+        </div>
+      </section>
+      <section>
+        <button mat-raised-button color="primary">Enquire Now</button>
+      </section>
+    </div>
+  </section>
+  <section>
+    <app-demo></app-demo>
+  </section>
+</div>
+<div fxFlex fxHide.gt-sm fxLayoutAlign="center">
+  <mat-card>
+    <mat-card-title class="cardheading" fxLayoutAlign="center"
+      >
+      Namkeen</mat-card-title
+      >
+      <img
+        mat-card-image
+      src="assets/Image/Food-Products/Namkeen.png"
+      class="mobimg"
+    />
+    <mat-card-content>
+      If you have been around someone from India, been to India,
+            or even just eaten Indian food,
+            you may have heard the word<b> "namkeen"</b>. <b>Namkeen</b>
+            is the Hindi word used to describe a savory flavor.
+            The word namkeen is derived from the word namak (meaning salt).
+            It is also used as a generic term to describe savory snack
+            foods. Namkeen is pronounced <b>"num-keen,"</b> and can also be
+            referred to as numkeen, namkin, and numkin depending on
+            where you travel throughout India and who you speak to.<br>
+            <b>Common Snack Foods</b><br>
+            Typical namkeen snacks in Indian cuisine include <b>khaara,
+              farsan, chivda, sav, chips, and bhujiya</b>. Namkeen of
+            Indore and ratlam are two snacks that are very well
+            known for their tastes. There are a few other Indian
+            snacks that incorporate salt and have a namkeen flavor,
+            some of which are made from basic grains and can be
+            flavored in a multitude of ways. These kinds are
+            therefore similar to each other but have different names.
+            Many of the namkeen snacks include sev, a versatile crunchy
+            snack that can be flavored with all sorts of spices.
+            Sev looks similar to the Chinese hard noodles served
+            in American Chinese food.
+
+
+      <h2>Nutrition Value</h2>
+      <table class="mobiletable" mat-table [dataSource]="dataSource">
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>No.</th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.position }}
+          </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef>Weight</th>
+          <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+
+      <mat-paginator
+        [pageSize]="5"
+        [pageSizeOptions]="[5, 10, 20]"
+        showFirstLastButtons
+      ></mat-paginator>
+      <button mat-raised-button color="primary">Enquire Now</button>
+    </mat-card-content>
+  </mat-card>
+</div>

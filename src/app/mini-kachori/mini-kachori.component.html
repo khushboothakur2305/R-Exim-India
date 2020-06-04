@@ -1,0 +1,136 @@
+<div fxLayout style="padding: 70px;" fxLayoutGap="20px"fxHide.lt-md>
+  <section>
+    <div fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+      <section>
+        <h1 class="heading">Mini-Kachori</h1>
+      </section>
+      <section>
+        <img src="assets/Image/Food-Products/Dry-Kachori.jpg" style="width: 90%;" />
+      </section>
+      <section>
+        <div fxLayout fxLayoutGap="20px">
+          <section>
+           <b> Mini-Kachori </b>is a deep fried crispy and crunchy ball of maida
+            flour stuffed with moong dal and various spicy dry masala.
+            it a mild sweet and spicy dry masala wrapped in a crisp outer
+            layer of maida, is delicious snack that can be stored for
+            few weeks.<b>Unlike normal Kachories, the product remains
+            fresh and preserved upto few weeks to couple of months.</b><br>
+            It can be served at tea-parties, packed at picnics to
+            munch when hunger strikes and also a great gifting
+            option for those who prefer savoury over sweets.<br>
+            You can make various kachori chat by topping as roasted cumin
+            seeds, black pepper, red chili powder,
+            sev bhujiya, pomegranate seeds, curd,
+            green chutney, sweet chutney,coriander leaves on it.
+
+
+          </section>
+          <section>
+            <div fxLayoutAlign="center">
+              <h2>Nutrition Value</h2>
+            </div>
+            <table mat-table [dataSource]="dataSource">
+
+              <!-- Position Column -->
+              <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> No. </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+              </ng-container>
+
+              <!-- Weight Column -->
+              <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+              </ng-container>
+
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+            <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+          </section>
+        </div>
+      </section>
+      <section>
+
+        <button mat-raised-button color="primary">Enquire Now</button>
+      </section>
+    </div>
+  </section>
+  <section>
+    <app-demo></app-demo>
+  </section>
+</div>
+<div fxFlex fxHide.gt-md fxLayoutAlign="center">
+  <mat-card>
+    <mat-card-title class="cardheading" fxLayoutAlign="center">
+      Mini-Kachori</mat-card-title
+    >
+    <img
+      mat-card-image
+      src="assets/Image/Food-Products/Dry-Kachori.jpg"
+      class="mobimg"
+    />
+    <mat-card-content>
+      <section>
+        <b> Mini-Kachori </b>is a deep fried crispy and crunchy ball of maida
+         flour stuffed with moong dal and various spicy dry masala.
+         it a mild sweet and spicy dry masala wrapped in a crisp outer
+         layer of maida, is delicious snack that can be stored for
+         few weeks.<b>Unlike normal Kachories, the product remains
+         fresh and preserved upto few weeks to couple of months.</b><br>
+         It can be served at tea-parties, packed at picnics to
+         munch when hunger strikes and also a great gifting
+         option for those who prefer savoury over sweets.<br>
+         You can make various kachori chat by topping as roasted cumin
+         seeds, black pepper, red chili powder,
+         sev bhujiya, pomegranate seeds, curd,
+         green chutney, sweet chutney,coriander leaves on it.
+
+
+       </section>
+
+      <h2>Nutrition Value</h2>
+
+      <table class="mobiletable" mat-table [dataSource]="dataSource">
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>No.</th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.position }}
+          </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef>Weight</th>
+          <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+
+      <mat-paginator
+        [pageSize]="5"
+        [pageSizeOptions]="[5, 10, 20]"
+        showFirstLastButtons
+      ></mat-paginator>
+      <button mat-raised-button color="primary">Enquire Now</button>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,114 @@
+<div fxLayout style="padding: 70px;" fxLayoutGap="20px" fxHide.lt-md>
+    <section>
+      <div fxLayout="column" fxLayoutGap="40px" fxLayoutAlign="center center">
+        <section>
+          <h1 class="heading">SPICES</h1>
+        </section>
+        <section>
+          <img src="assets/Image/spices/spices.jpg" style="width: 90%;" />
+        </section>
+        <section>
+          <div fxLayout fxLayoutGap="20px">
+            <section>
+                <b>Indian spices</b> include a variety of spices grown across the Indian subcontinent (a sub-region of South Asia). With different climates in different parts of the country, India produces a variety of spices, many of which are native to the subcontinent, while others were imported from similar climates and have since been cultivated locally for centuries.<br>
+                Spices are used in different forms: whole, chopped, ground, roasted, sautéed, fried, and as topping. They blend food to extract the nutrients and bind them in a palatable form. Some spices are added at the end as a flavouring and are typically heated in a pan with ghee or cooking oil before being added to a dish. Lighter spices are added last, and spices with strong flavour should be added first. "Curry" refers to any dish in Indian cuisine that contains several spices blended together, whether dry or with a gravy base. However, it also refers to Curry leaves, commonly used in South India.
+
+
+            </section>
+            <section>
+              <div fxLayoutAlign="center">
+                <h2>Nutrition Value</h2>
+              </div>
+              <table mat-table [dataSource]="dataSource">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                  <th mat-header-cell *matHeaderCellDef> Name </th>
+                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                  <th mat-header-cell *matHeaderCellDef> Weight </th>
+                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                </ng-container>
+
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+
+              <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+            </section>
+          </div>
+        </section>
+        <section>
+
+          <button mat-raised-button color="primary">Enquire Now</button>
+        </section>
+      </div>
+    </section>
+    <section>
+      <app-spice-list></app-spice-list>
+    </section>
+  </div>
+  <div fxFlex fxHide.gt-md fxLayoutAlign="center">
+    <mat-card>
+      <mat-card-title class="cardheading" fxLayoutAlign="center">
+       SPICES</mat-card-title
+      >
+      <img
+        mat-card-image
+        src="assets/Image/spices/spices.jpg"
+        class="mobimg"
+      />
+      <mat-card-content>
+        <section>
+          <b>Indian spices</b> include a variety of spices grown across the Indian subcontinent (a sub-region of South Asia). With different climates in different parts of the country, India produces a variety of spices, many of which are native to the subcontinent, while others were imported from similar climates and have since been cultivated locally for centuries.<br>
+          Spices are used in different forms: whole, chopped, ground, roasted, sautéed, fried, and as topping. They blend food to extract the nutrients and bind them in a palatable form. Some spices are added at the end as a flavouring and are typically heated in a pan with ghee or cooking oil before being added to a dish. Lighter spices are added last, and spices with strong flavour should be added first. "Curry" refers to any dish in Indian cuisine that contains several spices blended together, whether dry or with a gravy base. However, it also refers to Curry leaves, commonly used in South India.
+
+
+      </section>
+
+        <h2>Values</h2>
+
+        <table class="mobiletable" mat-table [dataSource]="dataSource">
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>No.</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.position }}
+            </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef>Weight</th>
+            <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <mat-paginator
+          [pageSize]="5"
+          [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons
+        ></mat-paginator>
+        <button mat-raised-button color="primary">Enquire Now</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
