@@ -39,6 +39,9 @@ import { SaffronComponent } from './saffron/saffron.component';
 import { HoneyComponent } from './honey/honey.component';
 import { SpicesComponent } from './spices/spices.component';
 import { SpiceListComponent } from './spice-list/spice-list.component';
+import { FoodProductsComponent } from './food-products/food-products.component';
+import { GrainsComponent } from './grains/grains.component';
+import { SpicesDisplayComponent } from './spices-display/spices-display.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +74,9 @@ import { SpiceListComponent } from './spice-list/spice-list.component';
     HoneyComponent,
     SpicesComponent,
     SpiceListComponent,
+    FoodProductsComponent,
+    GrainsComponent,
+    SpicesDisplayComponent,
   ],
   imports: [
     BrowserModule,
