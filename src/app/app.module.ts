@@ -42,6 +42,8 @@ import { SpiceListComponent } from './spice-list/spice-list.component';
 import { FoodProductsComponent } from './food-products/food-products.component';
 import { GrainsComponent } from './grains/grains.component';
 import { SpicesDisplayComponent } from './spices-display/spices-display.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -77,6 +79,7 @@ import { SpicesDisplayComponent } from './spices-display/spices-display.componen
     FoodProductsComponent,
     GrainsComponent,
     SpicesDisplayComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
@@ -88,6 +91,9 @@ import { SpicesDisplayComponent } from './spices-display/spices-display.componen
     FlexLayoutModule,
     MatTableModule,
     MatPaginatorModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
