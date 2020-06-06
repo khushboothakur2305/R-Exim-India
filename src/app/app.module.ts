@@ -44,7 +44,7 @@ import { GrainsComponent } from './grains/grains.component';
 import { SpicesDisplayComponent } from './spices-display/spices-display.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { AnimComponent } from './anim/anim.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,6 +80,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     GrainsComponent,
     SpicesDisplayComponent,
     HomepageComponent,
+    AnimComponent,
   ],
   imports: [
     BrowserModule,

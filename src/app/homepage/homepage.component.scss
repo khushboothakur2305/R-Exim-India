@@ -1,20 +1,20 @@
-
- .image{
-   height: 75px;
- }
-
 .navbar{
   justify-content: space-between;
 }
 span{
   padding-left :50px;
-align-items: left;
+align-items:right;
 }
-.example-button-toggle-label {
-  display: inline-block;
-  margin: 16px;
+.circle {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
 }
-colorbar{
-  color: white;
-  background-color: "primary";
+.icon{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+mat-card{
+  width: 200px;
 }
