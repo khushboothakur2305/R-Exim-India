@@ -45,6 +45,9 @@ import { SpicesDisplayComponent } from './spices-display/spices-display.componen
 import { HomepageComponent } from './homepage/homepage.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { AnimComponent } from './anim/anim.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +84,7 @@ import { AnimComponent } from './anim/anim.component';
     SpicesDisplayComponent,
     HomepageComponent,
     AnimComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -94,7 +98,8 @@ import { AnimComponent } from './anim/anim.component';
     MatPaginatorModule,
     MatMenuModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

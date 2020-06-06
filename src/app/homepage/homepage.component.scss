@@ -18,3 +18,51 @@ align-items:right;
 mat-card{
   width: 200px;
 }
+.card{
+height: 200px;
+width: 200px;
+padding: 15px;
+}
+mat-card-title{
+  text-align: center;
+}
+.circle2{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  align-items: center;
+  padding: 15px;
+}
+.mat{
+  width: 120px;
+}
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 12px;
+  border: 1px solid #555;
+}
+
+mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mobcircle{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 25px;
+
+}
+.mobicon{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+}
+.mobmat{
+  width: 130px;
+  height: 250px;
+}
