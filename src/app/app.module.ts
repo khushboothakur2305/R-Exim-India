@@ -47,6 +47,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { AnimComponent } from './anim/anim.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { FooterComponent } from './footer/footer.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -99,7 +102,9 @@ import { FooterComponent } from './footer/footer.component';
     MatMenuModule,
     MatToolbarModule,
     MatTabsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatGridListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
