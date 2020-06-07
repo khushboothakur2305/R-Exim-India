@@ -1,42 +1,34 @@
-.navbar{
-  justify-content: space-between;
-}
-span{
-  padding-left :50px;
-align-items:right;
-}
 .circle {
   height: 350px;
   width: 350px;
   border-radius: 50%;
 }
-.icon{
+.icon {
   height: 60px;
   width: 60px;
   border-radius: 50%;
 }
-mat-card{
+mat-card {
   width: 200px;
-  background-color: blanchedalmond;
+  background-color: rgb(243, 216, 174);
 }
-.card{
-height: 200px;
-width: 200px;
-padding: 15px;
+.card {
+  height: 200px;
+  width: 200px;
+  padding: 15px;
 }
-mat-card-title{
+mat-card-title {
   text-align: center;
 }
-.circle2{
+.circle2 {
   height: 120px;
   width: 120px;
   border-radius: 50%;
   align-items: center;
   padding: 15px;
 }
-.mat{
+.mat {
   width: 120px;
-
 }
 .example-container {
   width: 400px;
@@ -51,20 +43,22 @@ mat-drawer-content {
   flex-direction: column;
   align-items: flex-start;
 }
-.mobcircle{
+.mobcircle {
   height: 250px;
   width: 250px;
   border-radius: 50%;
   padding: 25px;
-
 }
-.mobicon{
+.mobicon {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-
 }
-.mobmat{
+.mobmat {
   width: 130px;
   height: 250px;
+}
+.process {
+  width: 130px;
+  background-color: rgb(153, 186, 250);
 }
