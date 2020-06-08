@@ -11,5 +11,11 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  about(){}
+  agri(){}
+  food(){}
+  che(){}
+  Grains(){}
+  species(){}
+  }
 
-}
