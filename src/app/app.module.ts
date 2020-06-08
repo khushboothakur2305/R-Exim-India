@@ -49,6 +49,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { FooterComponent } from './footer/footer.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
+import { AboutdeveloperComponent } from './aboutdeveloper/aboutdeveloper.component';
 
 
 @NgModule({
@@ -88,6 +89,7 @@ import {MatIconModule} from '@angular/material/icon';
     HomepageComponent,
     AnimComponent,
     FooterComponent,
+    AboutdeveloperComponent,
   ],
   imports: [
     BrowserModule,
